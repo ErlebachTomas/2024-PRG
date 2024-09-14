@@ -1,6 +1,6 @@
 # Shrnutí
 
-V tomto materiálu jsme si prošli:
+V tomto materiálu:
 
 - **Proměnné a datové typy**: Deklarace a přiřazení hodnot.
 - **Vstup a výstup**: Použití `Console.WriteLine()` a `Console.ReadLine()`.
