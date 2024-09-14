@@ -1,7 +1,4 @@
 # Shrnutí
-
-V tomto materiálu:
-
 - **Proměnné a datové typy**: Deklarace a přiřazení hodnot.
 - **Vstup a výstup**: Použití `Console.WriteLine()` a `Console.ReadLine()`.
 - **Převod vstupu**: Použití `int.TryParse()` pro bezpečný převod řetězce na číslo.
