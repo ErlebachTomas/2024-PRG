@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-datoveTypy", "02-datoveT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-Operatory", "03-Operatory\03-Operatory.csproj", "{D17709EB-2984-4A21-B534-5D286D9B899D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-podprogramy", "04-podprogramy\04-podprogramy.csproj", "{0BECCBD2-842A-4044-83A4-2494E8F01CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-podprogramy", "04-podprogramy\04-podprogramy.csproj", "{0BECCBD2-842A-4044-83A4-2494E8F01CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-pole", "05-pole\05-pole.csproj", "{78D841E3-9603-4455-BBA2-7B2958E7BF8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0BECCBD2-842A-4044-83A4-2494E8F01CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BECCBD2-842A-4044-83A4-2494E8F01CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BECCBD2-842A-4044-83A4-2494E8F01CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D841E3-9603-4455-BBA2-7B2958E7BF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D841E3-9603-4455-BBA2-7B2958E7BF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D841E3-9603-4455-BBA2-7B2958E7BF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D841E3-9603-4455-BBA2-7B2958E7BF8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
