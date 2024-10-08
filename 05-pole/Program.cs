@@ -84,6 +84,18 @@ foreach (int[] row in jaggedArray)
 }
 Console.WriteLine();
 
+// Výpis hodnot zubatého pole pomocí cyklů
+for(int i = 0; i < jaggedArray.Length; i++)
+{
+    Console.Write("[ ");
+    for (int j = 0; j < jaggedArray[i].Length; j++)
+    {
+        Console.Write(jaggedArray[i][j] + " ");
+    }
+    Console.Write("]");
+}
+
+
 // Ukázka reference na stejné pole
 int[] arr1 = { 1, 2, 3, 4, 5 };
 int[] arr2 = arr1; // arr2 odkazuje na stejné pole jako arr1
