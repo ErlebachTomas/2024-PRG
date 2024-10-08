@@ -101,7 +101,12 @@ int[] arr1 = { 1, 2, 3, 4, 5 };
 int[] arr2 = arr1; // arr2 odkazuje na stejné pole jako arr1
 arr2[2] = 100;
 Console.WriteLine("Hodnota na indexu 2 v arr1: " + arr1[2]); // Výsledek bude 100
- 
+
+// Ukázka vytvoření kopie pole
+int[] a = {5, 6, 7, 8, 9 };
+int[] b = (int[])a.Clone(); // Vytvoření kopie pole
+b[2] = 100;
+Console.WriteLine("Hodnota na indexu 2 v a: " + a[2]); // Výsledek bude 7
 
 void printArray(int[] numbers)
 {
