@@ -2,13 +2,17 @@
 
 // Deklarace a inicializace pole o velikosti 7 s defaultními hodnotami (nuly)
 int[] emptyArr = new int[7];
-printArray2(emptyArr);
+
 // Inicializace pole s předdefinovanými hodnotami
 int[] numbers2 = { 1, 2, 3, 4, 5, 6, 7 };
-printArray(numbers2);
+
+
+printArray(emptyArr); // Moje funkce pro výpis pole pomocí for cyklu
+printArray2(numbers2); // Moje funkce pro výpis pole pomocí foreach cyklu
+
 // Změna hodnoty na indexu 3
 numbers2[3] = 100;
-printArray(numbers2);
+
 
 // Výpis délky pole
 Console.WriteLine("Délka pole: " + numbers2.Length);
@@ -108,6 +112,10 @@ int[] b = (int[])a.Clone(); // Vytvoření kopie pole
 b[2] = 100;
 Console.WriteLine("Hodnota na indexu 2 v a: " + a[2]); // Výsledek bude 7
 
+
+///< summary >
+///výpis pole pomocí for cyklu
+///</summary>
 void printArray(int[] numbers)
 {
     for (int i = 0; i < numbers.Length; i++)
@@ -122,6 +130,9 @@ void printArray(int[] numbers)
     } 
 }
 
+///< summary >
+///výpis pole pomocí foreach cyklu
+///</summary>
 void printArray2(int[] numbers)
 {
     foreach (int i in numbers) {
@@ -129,7 +140,10 @@ void printArray2(int[] numbers)
     }
     Console.WriteLine();
 }
-
+///< summary >
+///Vynásobení hodnot pole číslem
+///@return pole s vynásobenými hodnotami
+///</summary>
 int[] MultiplyValues(int[] arr, int value)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -138,7 +152,7 @@ int[] MultiplyValues(int[] arr, int value)
     }
     return arr;
 }
-
+/// Modifikace pole pomocí reference
 void MultiplyValues2(ref int[] arr, int value)
 {
     for (int i = 0; i < arr.Length; i++)
