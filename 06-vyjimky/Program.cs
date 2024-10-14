@@ -2,11 +2,20 @@
 int[] pole = new int[5];
 pole = null; // pole je nyní null
 
-// int[] pole = { 0, 5, 10, null }; // chyba
-int?[] poleSNull = { 0, 5, null }; // zde již pole může obsahovat null
+// int[] pole = { 5, 10, null }; // chyba
+int?[] poleSNull = { 5, 10, null }; // zde již pole může obsahovat null
 
 // int c = null; // nelze 
 int? c = null; // int?  
+Console.WriteLine(c.HasValue); // false pokud je null
+
+foreach (int? prvek in poleSNull)
+{
+    if (prvek.HasValue)
+    {       
+        Console.WriteLine(prvek); // vypíše neulové prvky
+    }
+}
 
 // -------------------- Příklad 1: ošetření vyjimky --------------------
 int a = 10;
