@@ -1,4 +1,14 @@
-﻿// -------------------- Příklad 1: ošetření vyjimky --------------------
+﻿// -------------------- Nullable pole --------------------
+int[] pole = new int[5];
+pole = null; // pole je nyní null
+
+// int[] pole = { 0, 5, 10, null }; // chyba
+int?[] poleSNull = { 0, 5, null }; // zde již pole může obsahovat null
+
+// int c = null; // nelze 
+int? c = null; // int?  
+
+// -------------------- Příklad 1: ošetření vyjimky --------------------
 int a = 10;
 int b = 0;
 try
