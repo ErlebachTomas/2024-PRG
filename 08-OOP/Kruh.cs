@@ -49,7 +49,7 @@ namespace _08_OOP
         }        
        
         // funkce pro výpočet obvodu
-        public double VypocitatObvod(double polomer)
+        public static double VypocitatObvod(double polomer)
         {
             return 2 * Math.PI * polomer;
         }
