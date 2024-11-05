@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-podprogramy", "04-podpro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-pole", "05-pole\05-pole.csproj", "{78D841E3-9603-4455-BBA2-7B2958E7BF8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-vyjimky", "06-vyjimky\06-vyjimky.csproj", "{2FAF1D95-F03F-40AC-A505-C34C0A53FD44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-vyjimky", "06-vyjimky\06-vyjimky.csproj", "{2FAF1D95-F03F-40AC-A505-C34C0A53FD44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-tridy", "07-tridy\07-tridy.csproj", "{8DD1797F-1490-44AE-B702-BDFAA0FBF6E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-OOP", "08-OOP\08-OOP.csproj", "{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{2FAF1D95-F03F-40AC-A505-C34C0A53FD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FAF1D95-F03F-40AC-A505-C34C0A53FD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FAF1D95-F03F-40AC-A505-C34C0A53FD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD1797F-1490-44AE-B702-BDFAA0FBF6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD1797F-1490-44AE-B702-BDFAA0FBF6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD1797F-1490-44AE-B702-BDFAA0FBF6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD1797F-1490-44AE-B702-BDFAA0FBF6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
