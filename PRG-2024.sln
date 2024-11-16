@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-tridy", "07-tridy\07-tri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-OOP", "08-OOP\08-OOP.csproj", "{358A8C56-54EC-4FB8-8F2C-434BCFCF3F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-Dedicnost", "09-Dedicnost\09-Dedicnost.csproj", "{5AACDC08-5F2D-45BB-B8DB-1485D06E8164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-Dedicnost", "09-Dedicnost\09-Dedicnost.csproj", "{5AACDC08-5F2D-45BB-B8DB-1485D06E8164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-Polymorfismus", "10-Polymorfismus\10-Polymorfismus.csproj", "{33AD4BA4-E8A2-4821-99FE-E16F6FE7BD71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5AACDC08-5F2D-45BB-B8DB-1485D06E8164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AACDC08-5F2D-45BB-B8DB-1485D06E8164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AACDC08-5F2D-45BB-B8DB-1485D06E8164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AD4BA4-E8A2-4821-99FE-E16F6FE7BD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AD4BA4-E8A2-4821-99FE-E16F6FE7BD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AD4BA4-E8A2-4821-99FE-E16F6FE7BD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AD4BA4-E8A2-4821-99FE-E16F6FE7BD71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
