@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _10_Polymorfismus
+namespace Polymorfismus
 {
     internal class Cat : Animal
     {
-        public Cat(string name) : base(name)
+        public Cat(string name, int numberOflegs = 4) : base(name, numberOflegs)
         {
         }
-
-        public override string MakeSound()
+        public string MakeSound()
         {
             return $"Mňau Mňau";
         }

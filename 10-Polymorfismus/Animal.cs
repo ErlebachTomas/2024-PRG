@@ -4,28 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _10_Polymorfismus
+namespace Polymorfismus
 {
-    public abstract class Animal
-    {        
-        public string Name { get; protected set; }
-        protected int NumberOfLegs;
-               
-        public Animal(string name, int numberOfLegs = 4)
+    internal class Animal
+    {
+        public string Name { get; set; }
+        
+        protected int NumberOflegs;
+
+        public Animal(string name, int numberOflegs)
         {
             Name = name;
-            NumberOfLegs = numberOfLegs;
-        }
-        
-        public virtual string MakeSound()
-        {
-            return $"";
+            NumberOflegs = numberOflegs;
         }
 
-       
-        public virtual string Info()
-        {
-            return $"Jsem {Name} a mám {NumberOfLegs} nohy";
+        public virtual string Info() { 
+        
+            return $"Jsem {Name} a mám {NumberOflegs} nohy";
+        
         }
+
     }
 }

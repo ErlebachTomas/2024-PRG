@@ -4,35 +4,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _10_Polymorfismus
+namespace Polymorfismus
 {
     internal class AnimalFarm
     {
-        private List<Animal> animals = new List<Animal>();
+        private Animal[] animals;
+        private int count;
 
-        public List<Animal> GetAnimals() { return animals; }
+        public AnimalFarm(Animal[] animals)
+        {
+            this.animals = animals;
+            this.count = animals.Length;
+        }
+
+        public AnimalFarm(int size)
+        {
+            if (size <= 0) throw new ArgumentOutOfRangeException("size musí být větší než nula");
+
+            animals = new Animal[size];
+            this.count = 0;
+        }  
+
+        public void showInfo()
+        {
+
+            for (int i = 0; i < this.count; i++)
+            {
+
+                Console.WriteLine(animals[i].Info());
+            }
+
+        }
+
         public void AddAnimal(Animal animal)
         {
-            animals.Add(animal);
-        }
-        public void RemoveAnimal(Animal animal)
-        {
-            animals.Remove(animal);
-        }           
-        public void AllMakeSound()
-        {
-            foreach (var animal in animals)
+
+            if (this.count >= animals.Length)
             {
-                Console.WriteLine(animal.MakeSound());
+                throw new InvalidOperationException("Farma je plná");
             }
-        }       
-        public void ShowAllInfo()
-        {
-            foreach (var animal in animals)
-            {
-                Console.WriteLine(animal.Info());
-            }
+            animals[count++] = animal;
         }
 
+        public void RemoveAnimal(Animal animal)
+        {
+            int index = Array.IndexOf(animals, animal);
+            if (index >= 0 && index < count)
+            {
+                // Posun zvířat na nižší indexy, aby se odstraněné zvíře nahradilo
+                for (int i = index; i < count - 1; i++)
+                {
+                    animals[i] = animals[i + 1];
+                }
+                animals[count] = null; // Poslední pozici nastavíme na null
+                count--; // upravíme počet zvířat
+            }
+
+        }
+        public int getFarmSize()
+        {
+
+            return this.count;
+        }
+
+        public Animal getAnimal(int index)
+        {
+            if (index <= 0 || index > this.count) throw new ArgumentOutOfRangeException("neplatný index");
+            return this.animals[index];
+        }
     }
 }

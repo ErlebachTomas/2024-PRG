@@ -1,20 +1,18 @@
-﻿// Vytvoření instancí zvířat
-using _10_Polymorfismus;
+﻿using Polymorfismus;
 
-Cat myCat = new Cat("Mia");
-Dog myDog = new Dog("Buddy", true);
-Bird myBird = new Bird("Tweety", 2);
-Fish myFish = new Fish("Nemo", "oranžová");
+Dog alik = new Dog("Alík", true);
+Cat micka = new Cat("Micka", 4);
+Fish nemo = new Fish("Nemo", "oranžová");
+Bird tweety = new Bird("Tweety");
 
-// Vytvoření AnimalFarm a přidání zvířat
-AnimalFarm farm = new AnimalFarm();
-farm.AddAnimal(myCat);
-farm.AddAnimal(myDog);
-farm.AddAnimal(myBird);
-farm.AddAnimal(myFish);
+Animal[] animals = { alik, micka, nemo };
+AnimalFarm farma = new AnimalFarm(animals);
+farma.showInfo();
 
-// Všechna zvířata vydají svůj zvuk
-farm.AllMakeSound();
+AnimalFarm druhaFarma = new AnimalFarm(5);
+druhaFarma.AddAnimal(tweety);
+druhaFarma.showInfo();
 
-// Zobrazení informací o všech zvířatech
-farm.ShowAllInfo();
+
+
+

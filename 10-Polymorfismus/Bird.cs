@@ -4,16 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _10_Polymorfismus
+namespace Polymorfismus
 {
     internal class Bird : Animal
     {  
 
-        public Bird(string name, double wingSpan) : base(name, 2){}
+        public Bird(string name) : base(name, 2){}
              
-        public override string MakeSound()
-        {
-            return  "Cvrlik Cvrlik";
-        }
+      
     }
 }
