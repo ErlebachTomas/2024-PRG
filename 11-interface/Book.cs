@@ -12,7 +12,6 @@ internal class Book : IReadable, IComparable<Book>
     public string Name { get; set; }  
     public string Content { get; set; }
 
-    // Vlastnost pro počet stran, která vypočítá počet slov v obsahu
     public int Pages { get { return Content.Split(" ").Count(); } }
 
     // Metoda pro porovnání knih na základě počtu stran

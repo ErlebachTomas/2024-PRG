@@ -1,5 +1,4 @@
-﻿// Vytvoření nových instancí a práce s objekty
-using _11_interface;
+﻿using _11_interface;
 
 Reader tonda = new Reader( "Antonín");
 Book bab = new Book { Name = "Babička", Content = "Něco s nějakou starou paní." };
@@ -21,10 +20,7 @@ Console.WriteLine(bab.CompareTo(lotr));
  IEnumerator - slouží k iteraci přes kolekce
 */
 
-// Příklad další práce s rozhraními
 IReadable[] readings = { bab, lotr, blesk };
-
-// Použití rozhraní IEnumerable pro iteraci přes kolekci IReadable
 foreach (IReadable reading in readings)
 {
     Console.WriteLine(tonda.Read(reading));
