@@ -4,28 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _13_vanocniProgramovani
+namespace vanocniProgramovani
 {
-
-    public abstract class Decorator
-
-        : IWrapGift
+    public abstract class Decorator : IGift
     {
-        protected IWrapGift _wrapping;
+        protected IGift _gift;
 
-        protected Decorator(IWrapGift wrapping)
+        protected Decorator(IGift gift) { 
+        
+              _gift = gift;
+
+        }
+        public virtual double Cost()
         {
-            _wrapping = wrapping;
+          return _gift.Cost();
         }
 
         public virtual string Describe()
         {
-            return _wrapping.Describe();
-        }
-
-        public virtual double Cost()
-        {
-            return _wrapping.Cost();
+            return _gift.Describe();
         }
     }
 }

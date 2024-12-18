@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _13_vanocniProgramovani
+namespace vanocniProgramovani
 {
     public class RibbonDecorator : Decorator
     {
-        private string _color;
-
-        public RibbonDecorator(IWrapGift wrapping, string color) : base(wrapping)
+        private string color;
+        public RibbonDecorator(IGift gift, string color) : base(gift)
         {
-            _color = color;
+            this.color = color;
         }
-
         public override string Describe()
         {
-            return _wrapping.Describe() + $" a {_color} stuhou";
+            return base.Describe() + $" s {color} stuhou";
         }
 
         public override double Cost()
         {
-            return _wrapping.Cost() + 3.0; 
+            return base.Cost() + 10;
         }
+
+
     }
 }

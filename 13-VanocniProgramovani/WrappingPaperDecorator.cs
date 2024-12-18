@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _13_vanocniProgramovani
+namespace vanocniProgramovani
 {
-    public class WrappingPaperDecorator : Decorator
+    internal class WrappingPaperDecorator : Decorator
     {
-        private string _colorOrPattern;
-
-        public WrappingPaperDecorator(IWrapGift wrapping, string colorOrPattern) : base(wrapping)
+        private string color;
+        public WrappingPaperDecorator(IGift gift, string color) : base(gift)
         {
-            _colorOrPattern = colorOrPattern;
+            this.color = color;
+
         }
 
         public override string Describe()
         {
-            return _wrapping.Describe() + $" s {_colorOrPattern} balicím papírem";
+            return base.Describe() + $" s {this.color} balicim papirem";
         }
 
         public override double Cost()
         {
-            return _wrapping.Cost() + 5.0; 
+            return base.Cost() + 15;
         }
+
     }
 }

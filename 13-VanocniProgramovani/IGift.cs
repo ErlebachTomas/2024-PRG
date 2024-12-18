@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _13_vanocniProgramovani
+namespace vanocniProgramovani
 {
-    public interface IWrapGift
-
+    public interface IGift
     {
         string Describe();
+
         double Cost();
+
     }
 }

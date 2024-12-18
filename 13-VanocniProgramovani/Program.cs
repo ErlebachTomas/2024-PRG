@@ -1,19 +1,23 @@
-﻿using _13_vanocniProgramovani;
+﻿
+
+using vanocniProgramovani;
+
+IGift gift = new Gift("Xbox S", "Karel", 9000);
+gift = new WrappingPaperDecorator(new BoxDecorator(gift), "modrým pruhovaným");
+
+IGift darekProJanu = new Gift("Iphone 16", "Jana");
+darekProJanu = new RibbonDecorator(new BoxDecorator(darekProJanu), "růžovou");
+
+IGift darekProPetra = new Gift("Notebook", "Petr", 15000);
+darekProPetra = new RibbonDecorator(new WrappingPaperDecorator(new BoxDecorator(darekProPetra), "zeleným"), "zlatou");
 
 
-IWrapGift gift = new Gift("Xbox S", "Karel", 9000 );
-gift = new BoxDecorator(gift);
-gift = new WrappingPaperDecorator(gift, "modrým pruhovaným");
-gift = new RibbonDecorator(gift, "bílou");
-PrintGift(gift);
-
-gift = new Gift("Panenku", "Jana", 300);
-gift = new WrappingPaperDecorator(new BoxDecorator(gift), "červeným srdíčkovým");
-PrintGift(gift);
+Print(gift);
+Print(darekProJanu);
+Print(darekProPetra);
 
 
-static void PrintGift(IWrapGift gift)
-{
-    Console.WriteLine($"Dárek: {gift.Describe()}");
-    Console.WriteLine($"Cena za balení: {gift.Cost()} Kč\n");
+void Print(IGift gift) {
+    Console.WriteLine(gift.Describe() + " za " + gift.Cost() + " kč");
 }
+

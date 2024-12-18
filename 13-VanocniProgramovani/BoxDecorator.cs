@@ -4,20 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _13_vanocniProgramovani
+namespace vanocniProgramovani
 {
-    public class BoxDecorator : Decorator
+    internal class BoxDecorator : Decorator
     {
-        public BoxDecorator(IWrapGift wrapping) : base(wrapping) { }
+
+        public BoxDecorator(IGift gift) : base(gift)
+        {
+        }
 
         public override string Describe()
         {
-            return _wrapping.Describe() + " v krabici";
+            return base.Describe() + " v krabici";
         }
 
         public override double Cost()
         {
-            return _wrapping.Cost() + 16.0; // cena krabice
+            return base.Cost() + 20; // cena za krabici
         }
     }
 }
