@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-Abstrakce", "12-Abstrakc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-VanocniProgramovani", "13-vanocniProgramovani\13-VanocniProgramovani.csproj", "{0BA2C6BF-78A0-43BF-828C-F078B81FB681}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-Farma", "14-Farma\14-Farma.csproj", "{D4ACCAC8-2415-4A39-B20C-0D5AE30E8D08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{0BA2C6BF-78A0-43BF-828C-F078B81FB681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA2C6BF-78A0-43BF-828C-F078B81FB681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA2C6BF-78A0-43BF-828C-F078B81FB681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4ACCAC8-2415-4A39-B20C-0D5AE30E8D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4ACCAC8-2415-4A39-B20C-0D5AE30E8D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4ACCAC8-2415-4A39-B20C-0D5AE30E8D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4ACCAC8-2415-4A39-B20C-0D5AE30E8D08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
