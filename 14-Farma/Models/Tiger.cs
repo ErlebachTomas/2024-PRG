@@ -11,7 +11,7 @@
 
         public override string ToString()
         {
-            return $"Tygr {Id}";
+            return "Tygr " + Id;
         }
 
         public double Consume(Animal animal)
