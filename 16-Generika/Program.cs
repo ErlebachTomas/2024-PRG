@@ -2,7 +2,7 @@
 using _16_Generika;
 
 // Použití generické třídy Box
-Box<int> intBox = new Box<int>();
+Box<int> intBox = new Box<int>(5);
 intBox.Store(42);
 int number = intBox.GetItem(); // number = 42
 Console.WriteLine(number);

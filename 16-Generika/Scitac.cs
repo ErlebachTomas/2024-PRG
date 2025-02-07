@@ -23,9 +23,8 @@ namespace _16_Generika
 
         public T secti(T number)
         {
-           return _value + number; // Vrací součet aktuální hodnoty a parametru
+            return _value + number; // Vrací součet aktuální hodnoty a parametru
         }
 
     }
-​
 }

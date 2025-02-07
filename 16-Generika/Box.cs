@@ -10,6 +10,11 @@ namespace _16_Generika
     {
         private T item;
 
+        public Box(T item)
+        {
+            this.item = item;
+        }
+
         public void Store(T item)
         {
             this.item = item;
