@@ -1,5 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿List<int> list = new List<int> { 1,8, 3, 7 };
+list.Sort();
 
 Student x = new Student { Firstname = "Jim", Lastname = "Brown" };
 List<Student> students = new List<Student>
