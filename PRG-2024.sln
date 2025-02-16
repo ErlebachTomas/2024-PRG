@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15-PretizeniOperatoru", "15
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16-Generika", "16-Generika\16-Generika.csproj", "{4C3DC7CF-964D-434D-8BF2-BA6A37B2DAFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-Kolekce", "17-Kolekce\17-Kolekce.csproj", "{422B449F-CB9C-4229-9BD1-7EC1357C604C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17-Kolekce", "17-Kolekce\17-Kolekce.csproj", "{422B449F-CB9C-4229-9BD1-7EC1357C604C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegat", "Delegat\Delegat.csproj", "{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{422B449F-CB9C-4229-9BD1-7EC1357C604C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422B449F-CB9C-4229-9BD1-7EC1357C604C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{422B449F-CB9C-4229-9BD1-7EC1357C604C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
