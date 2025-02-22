@@ -1,8 +1,12 @@
-﻿List<string> list = new List<string>();
+﻿List<int> numbers = new List<int> { 1, 2, 3, 7, 8, 5, 9, 6, 1, 4, 8, 4 };
+Console.WriteLine(numbers.CountOdd()); // volani rozsirujici funkce
+
+List<string> list = new List<string>();
 list.Add("Hello, Petr");
 list.Add("Hello, Jana ");
 list.Add("Hello, Lukáš");
 list.Add("Welcome, Karel");
+
 foreach (string item in list)
 {
     Console.WriteLine(item);
@@ -16,22 +20,20 @@ foreach (string item in list
 }
 
 Console.WriteLine(CallMathOp(4, 5, Addition));
-Console.WriteLine(CallMathOp(4, 5, (i, j) => { return (i + j); })); // lambda funkce, arrow funkce
+Console.WriteLine(CallMathOp(4, 5, (i, j) => { return (i + j); })); // lambda funkce (arrow funkce)
 float CallMathOp(float l, float m, BinaryMathOp op)
 {
     return op(l, m);
 }
 
-float CallOp(float l, float m, Func<float, float, float> op) // návratová hodnota, parametry
+float CallOp(float l, float m, Func<float, float, float> op) // parametry + návratová hodnota
 {
     return (float)op(l, m);
 }
 
-float Addition(float x, float y) { return x + y; } // : delegate?
+float Addition(float x, float y) { return x + y; } 
 
-delegate float BinaryMathOp(float a, float b);
-
-
+delegate float BinaryMathOp(float a, float b); // : delegát
 
 
 // ------

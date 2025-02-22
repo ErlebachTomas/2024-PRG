@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16-Generika", "16-Generika\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17-Kolekce", "17-Kolekce\17-Kolekce.csproj", "{422B449F-CB9C-4229-9BD1-7EC1357C604C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegat", "Delegat\Delegat.csproj", "{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18-DelegatyARozsirujiciMetody", "Delegat\18-DelegatyARozsirujiciMetody.csproj", "{1F69DE85-ABB6-4384-8906-6D5A6BD951CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
