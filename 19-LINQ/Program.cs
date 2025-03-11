@@ -37,7 +37,7 @@ foreach (Student x in seznamStudentu.OrderByDescending(x => x.Prijmeni).ThenBy(x
 }
 
 Console.WriteLine();
-foreach (Student x in seznamStudentu.Take(5))
+foreach (Student x in seznamStudentu.OrderBy(x => x.Prijmeni).Take(5))
 {
     Console.WriteLine(x); // Výpis prvních pěti studentů ze seznamu.
 }
@@ -52,7 +52,7 @@ foreach (var x in seznamStudentu.GroupBy(x => x.Trida))
 Console.WriteLine();
 foreach (var x in seznamStudentu.Select(x => new Jmeno { Text = x.Jmeno }))
 {
-    Console.WriteLine(x.Text); // Výpis jmen studentů.
+    Console.WriteLine(x.Text); 
 }
 
 Console.WriteLine();
@@ -64,7 +64,7 @@ foreach (var x in seznamStudentu
     .Take(3) // Výběr prvních tří položek.
     )
 {
-    Console.WriteLine(x.Trida + " " + x.Count); // Výpis třídy a počtu studentů pro první tři třídy s více než jedním studentem.
+    Console.WriteLine(x.Trida + " " + x.Count); 
 }
 
 class Student
@@ -89,20 +89,3 @@ class TridaSouhrn
     public string Trida { get; set; }
     public int Count { get; set; }
 }
-/*
-1) Vypiš všechny studenty
-
-2) Kteří studenti bydlí v Liberci?
-
-3) Jak vypadá seznam studentů seřazený podle příjmení vzestupně?
-
-4) Jak vypadá seznam studentů seřazený podle příjmení sestupně a při shodě podle jména vzestupně?
-
-5) Jak se jmenuje prvních pět studentů v seznamu?
-
-6) Kolik studentů je v jednotlivých třídách?
-
-7) Vypiš pouze jména studentů
-
-8) Které tři třídy s více než jedním studentem mají nejméně studentů?
-*/
