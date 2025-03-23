@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18-DelegatyARozsirujiciMeto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19-LINQ", "19-LINQ\19-LINQ.csproj", "{90C28FBD-C30D-42D1-A406-90D9EDBFB1EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20-LINQ2", "20-LINQ2\20-LINQ2.csproj", "{B038B488-4C4B-4439-9064-48569DDD7C60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20-LINQ2", "20-LINQ2\20-LINQ2.csproj", "{B038B488-4C4B-4439-9064-48569DDD7C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-Cas", "21-Cas\21-Cas.csproj", "{418CBE80-29D5-443C-A951-99970E904406}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{B038B488-4C4B-4439-9064-48569DDD7C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B038B488-4C4B-4439-9064-48569DDD7C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B038B488-4C4B-4439-9064-48569DDD7C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418CBE80-29D5-443C-A951-99970E904406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418CBE80-29D5-443C-A951-99970E904406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418CBE80-29D5-443C-A951-99970E904406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418CBE80-29D5-443C-A951-99970E904406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
