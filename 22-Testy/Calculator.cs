@@ -13,6 +13,14 @@ namespace _22_Testy
             return a + b;
         }
 
+
+        public double Division(double a, double b)
+        {
+            if (b == 0)
+                throw new ArgumentException("nelze dělit nulou");
+
+            return a / b;
+        }
         public double Subtraction(double a, double b)
         {
             return a - b;
@@ -23,12 +31,5 @@ namespace _22_Testy
             return a * b;
         }
 
-        public double Division(double a, double b)
-        {
-            if (b == 0)
-                throw new ArgumentException("nelze dělit nulou");
-
-            return a / b;
-        }
     }
 }

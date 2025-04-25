@@ -4,9 +4,11 @@ using static Diagnostika;
 using System.Text;
 
 /*
- Do nového testovacího projektu je potřeba přidat odkaz na testovaný projekt.
+ Do nového testovacího projektu je potřeba 
+ přidat odkaz na testovaný projekt.
 
-V kontextovém menu nového projektu vybrat Add/Project Reference... a vybrat testovaný projekt. 
+V kontextovém menu nového projektu 
+vybrat Add/Project Reference... a vybrat testovaný projekt. 
 */
 Console.WriteLine("Ukázka jednotkových testů, Nabídka Test > Run All Tests");
 Console.WriteLine();

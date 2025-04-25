@@ -5,7 +5,7 @@ namespace _22_TestProject
 {
     public class CalculatorTests
     {
-        private readonly Calculator _calc; // Instance testované tøídy
+        private readonly Calculator _calc; // Instance testovanï¿½ tï¿½ï¿½dy
 
         public CalculatorTests()
         {
@@ -13,14 +13,19 @@ namespace _22_TestProject
         }
 
         /// <summary>
-        /// Test: metoda Addition vrací správné výsledky
+        /// Test: metoda Addition vracï¿½ sprï¿½vnï¿½ vï¿½sledky
         /// </summary>
         [Fact]
         public void Addition_ShouldReturnCorrectResult()
         {
             Assert.Equal(2, _calc.Addition(1, 1));
-            Assert.Equal(1.42, _calc.Addition(3.14, -1.72), 3);     // tolerance 3 desetinná místa
+            Assert.Equal(1.42, _calc.Addition(3.14, -1.72), 3);     // tolerance 3 desetinnï¿½ mï¿½sta
       
+        }
+        [Fact]
+        public void Division_ByZero_ShouldThrowArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => _calc.Division(5, 0));
         }
 
         [Theory]
@@ -54,10 +59,6 @@ namespace _22_TestProject
             Assert.Equal(1, _calc.Division(1.0 / 3, 1.0 / 3));
         }
 
-        [Fact]
-        public void Division_ByZero_ShouldThrowArgumentException()
-        {
-            Assert.Throws<ArgumentException>(() => _calc.Division(5, 0));
-        }
+     
     }
 }
