@@ -45,9 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20-LINQ2", "20-LINQ2\20-LIN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21-Cas", "21-Cas\21-Cas.csproj", "{418CBE80-29D5-443C-A951-99970E904406}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-Testy", "22-Testy\22-Testy.csproj", "{8E02AC02-9A03-4966-ADFD-733A76CD0E29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22-Testy", "22-Testy\22-Testy.csproj", "{8E02AC02-9A03-4966-ADFD-733A76CD0E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-TestProject", "22-TestProject\22-TestProject.csproj", "{1F08D8E7-EF87-411F-94B7-7F52BAB546AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22-TestProject", "22-TestProject\22-TestProject.csproj", "{1F08D8E7-EF87-411F-94B7-7F52BAB546AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-text", "23-text\23-text.csproj", "{501EF668-8C4C-4C26-BA4B-0D7037A3B462}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{1F08D8E7-EF87-411F-94B7-7F52BAB546AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F08D8E7-EF87-411F-94B7-7F52BAB546AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F08D8E7-EF87-411F-94B7-7F52BAB546AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501EF668-8C4C-4C26-BA4B-0D7037A3B462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501EF668-8C4C-4C26-BA4B-0D7037A3B462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501EF668-8C4C-4C26-BA4B-0D7037A3B462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501EF668-8C4C-4C26-BA4B-0D7037A3B462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
