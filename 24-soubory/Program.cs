@@ -1,5 +1,6 @@
 ﻿// --- Výpis CLI argumentů ---
 Console.WriteLine("--- CLI argumenty ---");
+
 for (int i = 0; i < args.Length; i++)
     Console.WriteLine($"{i}: {args[i]}");
 // Argumenty předávané programu lze nastavit v menu Debug\ProcessData Debug Properties

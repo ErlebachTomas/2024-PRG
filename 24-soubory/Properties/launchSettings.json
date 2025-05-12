@@ -1,8 +1,7 @@
 {
   "profiles": {
     "24-soubory": {
-      "commandName": "Project",
-      "commandLineArgs": "ahoj"
+      "commandName": "Project"
     }
   }
 }
